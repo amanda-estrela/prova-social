@@ -1,0 +1,15 @@
+/** {
+    background:  ;
+}*/
+
+.titulo-principal {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.rodape-imagem {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
