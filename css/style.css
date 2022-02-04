@@ -1,15 +1,26 @@
-/** {
-    background:  ;
-}*/
-
-.titulo-principal {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
+*{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
 }
 
-.rodape-imagem {
+.titulo-principal {
+    color:hsl(300, 43%, 22%);
+    font-size: 3rem;
+}
+
+
+.bottom {
     position: absolute;
     right: 0;
     top: 100px;
+}
+
+.bottom-bottom {
+    position: absolute;
+    bottom:0;
+    left: 40%;
+}
+
+.texto {
+    margin: auto;
 }
