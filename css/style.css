@@ -5,10 +5,8 @@
 body{
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    /*display: grid;*/
-    margin: 10%;
-    /*grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);*/
+    line-height: 1.5;
+    margin:5% 10%;
 }
 
 
@@ -32,10 +30,121 @@ body{
 
 .subtitulo {
     color: hsl(303, 10%, 53%);
+    text-align: left;
 }
 
 .rate {
     color: hsl(300, 43%, 22%);
     font-weight: 700;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
+.rate p {
+    background-color: hsl(300, 24%, 96%);
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 400px;
+    height: fit-content;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.rate .report {
+    margin-left: 40px;
+}
+
+.rate .best {
+    margin-left: 80px;
+}
+
+.review {
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+
+.review .bloco {
+    background-color:  hsl(300, 43%, 22%);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    height: fit-content;
+}
+.review img {
+    border-radius: 45px;
+    float: left;
+    margin-right: 2rem;
+    max-width: 3rem;
+}
+
+.review .cliente {
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.review .sub {
+    color: hsl(333, 80%, 67%);
+    font-size: smaller;
+}
+
+.bloco p {
+    color: hsl(0, 0%, 100%) ;
+}
+
+.bloco:nth-child(2){
+    margin-top: 30px;
+}
+
+.bloco:nth-child(3){
+    margin-top: 60px;
+}
+
+.depoimento{
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        width: 100%;
+        margin: 5%;
+    }
+    .hero, .review {
+        margin: inherit;
+        width: 100%;
+        flex-direction: column;
+    }
+    .texto, .sub {
+        width: 100%;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+    .rate {
+        padding: 2px;
+        margin: inherit;
+        width: 90%;
+    }
+    .rate p {
+        margin-left: auto;
+    }
+
+    .review {
+        flex-direction: column;
+    }
+    .rate .reviews{
+        margin-left: 0;
+    }
+
+    .rate .report {
+        margin-left: 0;
+    }
+
+    .rate .best {
+        margin-left: 0;
+    }
+}
