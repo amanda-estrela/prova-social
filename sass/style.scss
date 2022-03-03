@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin:5% 10%;
+}
+
+
+.hero {
+    display: flex;
+
+}
+.texto {
+    flex-direction: column;
+    width: 50%;
+    padding-right: 100px;
+    margin-bottom: 2rem;
+}
+
+.titulo {
+    padding-bottom: 0.75rem;
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.subtitulo {
+    color: hsl(303, 10%, 53%);
+    text-align: left;
+}
+
+.rate {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    .report {
+        margin-left: 40px;
+    }
+
+    .best {
+        margin-left: 80px;
+    }
+}
+
+.paragrafo {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 400px;
+    height: fit-content;
+    font-size: 14px;
+    justify-content: space-evenly;
+} 
+
+.review {
+    display: flex;
+    height: 400px;
+    align-items: center;
+
+    .bloco {
+        background-color:  hsl(300, 43%, 22%);
+        margin: 10px;
+        border-radius: 10px;
+        padding: 1.5rem 1.5rem 3rem 1.5rem;
+        height: fit-content; 
+        
+        &:nth-child(2){
+            margin-top: 30px;
+        }
+
+        &:nth-child(3){
+            margin-top: 60px;
+        }
+
+        p {
+            color: hsl(0, 0%, 100%) ;
+        }
+
+       
+    }
+
+    img {
+        border-radius: 45px;
+        float: left;
+        margin-right: 2rem;
+        max-width: 3rem;
+    }
+
+    .cliente {
+        color: hsl(0, 0%, 100%);   
+    }
+
+    .sub {
+        color: hsl(333, 80%, 67%);
+        font-size: smaller;
+    }
+}
+
+.depoimento{
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        width: auto;
+        margin: 5%;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .hero, .review {
+        margin: inherit;
+        width: 100%;
+        flex-direction: column;
+    }
+    .texto, .sub {
+        width: 100%;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+    span{
+        display: block;
+    }
+    
+
+    .rate {
+        padding: 2px;
+        margin: inherit;
+        width: 90%;
+
+        p {
+            margin-left: auto;
+            width: auto;
+        }
+    }
+
+    .review {
+        flex-direction: column;
+    }
+    .rate {
+        .reviews{
+                margin-left: 0;
+            }
+
+        .report {
+            margin-left: 0;
+        }
+
+        .best {
+            margin-left: 0;
+        }
+    }
+}

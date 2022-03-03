@@ -1,162 +1,152 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Spartan', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    margin:5% 10%;
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 5% 10%;
 }
-
 
 .hero {
-    display: flex;
-
+  display: flex;
 }
+
 .texto {
-    flex-direction: column;
-    width: 50%;
-    padding-right: 100px;
-    margin-bottom: 2rem;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 100px;
+  margin-bottom: 2rem;
 }
 
 .titulo {
-    padding-bottom: 0.75rem;
-    color: hsl(300, 43%, 22%);
-    font-size: 3rem;
-    font-weight: 700;
+  padding-bottom: 0.75rem;
+  color: #502050;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .subtitulo {
-    color: hsl(303, 10%, 53%);
-    text-align: left;
+  color: #937b92;
+  text-align: left;
 }
 
 .rate {
-    color: hsl(300, 43%, 22%);
-    font-weight: 700;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+  color: #502050;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.rate .report {
+  margin-left: 40px;
+}
+.rate .best {
+  margin-left: 80px;
 }
 
 .paragrafo {
-    display: flex;
-    background-color: hsl(300, 24%, 96%);
-    margin: 10px;
-    padding: 15px 25px;
-    border-radius: 5px;
-    width: 400px;
-    height: fit-content;
-    font-size: 14px;
-    justify-content: space-evenly;
-}
-
-.rate .report {
-    margin-left: 40px;
-}
-
-.rate .best {
-    margin-left: 80px;
+  display: flex;
+  background-color: #f7f2f7;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  width: 400px;
+  height: fit-content;
+  font-size: 14px;
+  justify-content: space-evenly;
 }
 
 .review {
-    display: flex;
-    height: 400px;
-    align-items: center;
+  display: flex;
+  height: 400px;
+  align-items: center;
 }
-
-
 .review .bloco {
-    background-color:  hsl(300, 43%, 22%);
-    margin: 10px;
-    border-radius: 10px;
-    padding: 1.5rem 1.5rem 3rem 1.5rem;
-    height: fit-content;
+  background-color: #502050;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  height: fit-content;
+}
+.review .bloco:nth-child(2) {
+  margin-top: 30px;
+}
+.review .bloco:nth-child(3) {
+  margin-top: 60px;
+}
+.review .bloco p {
+  color: white;
 }
 .review img {
-    border-radius: 45px;
-    float: left;
-    margin-right: 2rem;
-    max-width: 3rem;
+  border-radius: 45px;
+  float: left;
+  margin-right: 2rem;
+  max-width: 3rem;
 }
-
 .review .cliente {
-    color: hsl(0, 0%, 100%);
-    
+  color: white;
 }
-
 .review .sub {
-    color: hsl(333, 80%, 67%);
-    font-size: smaller;
+  color: #ee68a4;
+  font-size: smaller;
 }
 
-.bloco p {
-    color: hsl(0, 0%, 100%) ;
+.depoimento {
+  margin-top: 3rem;
 }
 
-.bloco:nth-child(2){
-    margin-top: 30px;
+@media screen and (max-width: 768px) {
+  body {
+    width: auto;
+    margin: 5%;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero, .review {
+    margin: inherit;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .texto, .sub {
+    width: 100%;
+    padding-right: 10px;
+    text-align: justify;
+  }
+
+  span {
+    display: block;
+  }
+
+  .rate {
+    padding: 2px;
+    margin: inherit;
+    width: 90%;
+  }
+  .rate p {
+    margin-left: auto;
+    width: auto;
+  }
+
+  .review {
+    flex-direction: column;
+  }
+
+  .rate .reviews {
+    margin-left: 0;
+  }
+  .rate .report {
+    margin-left: 0;
+  }
+  .rate .best {
+    margin-left: 0;
+  }
 }
 
-.bloco:nth-child(3){
-    margin-top: 60px;
-}
-
-.depoimento{
-    margin-top: 3rem;
-}
-
-@media screen and (max-width: 768px){
-
-    body{
-        width: auto;
-        margin: 5%;
-    }
-
-    .titulo {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .hero, .review {
-        margin: inherit;
-        width: 100%;
-        flex-direction: column;
-    }
-    .texto, .sub {
-        width: 100%;
-        padding-right: 10px;
-        text-align: justify;
-    }
-
-    span{
-        display: block;
-    }
-    
-
-    .rate {
-        padding: 2px;
-        margin: inherit;
-        width: 90%;
-    }
-    .rate p {
-        margin-left: auto;
-        width: auto;
-    }
-
-    .review {
-        flex-direction: column;
-    }
-    .rate .reviews{
-        margin-left: 0;
-    }
-
-    .rate .report {
-        margin-left: 0;
-    }
-
-    .rate .best {
-        margin-left: 0;
-    }
-}
+/*# sourceMappingURL=style.css.map */
