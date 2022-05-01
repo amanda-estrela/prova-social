@@ -32,7 +32,7 @@ Este projeto foi selecionado para que pudesse por em prática meus aprendizados 
 ### Deploy
 
 <p>
-  https://faq-amanda-estrela.vercel.app/
+ https://prova-social-amanda-estrela.vercel.app/
 </p>
 
 
